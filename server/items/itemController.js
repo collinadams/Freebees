@@ -29,7 +29,7 @@ module.exports = {
 
     //The below line searches the database for a pre-existing row in db that exactly matches the user input
     findOne({itemName: itemName, itemLng: itemLocation.lng, itemLat: itemLocation.lat})
-
+      //after the db query returns, we now have access to the item that exactly matches the user input
       .then(function(item){
 
         //If the item already exists in db, notify the user they need to try again
